@@ -1,7 +1,9 @@
 package com.madequan.badminton.service.impl;
 
+import com.madequan.badminton.entity.Pager;
 import com.madequan.badminton.entity.TPlace;
 import com.madequan.badminton.dao.TPlaceDao;
+import com.madequan.badminton.placeenum.PlaceEnum;
 import com.madequan.badminton.service.TPlaceService;
 import org.springframework.stereotype.Service;
 
@@ -38,8 +40,29 @@ public class TPlaceServiceImpl implements TPlaceService {
      * @return 对象列表
      */
     @Override
-    public List<TPlace> queryAllByLimit(int offset, int limit) {
-        return this.tPlaceDao.queryAllByLimit(offset, limit);
+    public Pager queryAllByLimit(int offset, int limit, TPlace tPlace) {
+        List<TPlace> tPlaces = tPlaceDao.queryAll(tPlace);
+        int count = tPlaceDao.selectTplaceCount();
+        tPlaces.forEach(t -> {
+            if (PlaceEnum.free.getCode().equals(t.getPlaceStatus())) {
+                t.setPlaceStatus(PlaceEnum.free.getDesc());
+            } else if (PlaceEnum.booked.getCode().equals(t.getPlaceStatus())) {
+                t.setPlaceStatus(PlaceEnum.booked.getDesc());
+            } else {
+                t.setPlaceStatus(PlaceEnum.inuse.getDesc());
+            }
+        });
+        Pager<TPlace> pager = new Pager<>(tPlaces,offset,limit);
+        return pager;
+    }
+    /**
+     * 查询多条数据
+     *
+     * @return 对象列表
+     */
+    @Override
+    public List<TPlace> findAll() {
+        return this.tPlaceDao.findAll();
     }
 
     /**

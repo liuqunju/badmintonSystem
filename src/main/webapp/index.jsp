@@ -83,20 +83,21 @@
                 <li><a href="#" class="dropdown-toggle"><i class="icon-desktop"></i><span
                         class="menu-text"> 询价管理 </span><b class="arrow icon-angle-down"></b></a>
                     <ul class="submenu">
-                        <li class="home"><a href="javascript:void(0)" name="项目立项.html" title="项目立项" class="iframeurl"><i
+                        <%--<li class="home"><a href="javascript:void(0)" name="项目立项.html" title="项目立项" class="iframeurl"><i
                                 class="icon-double-angle-right"></i>项目立项</a></li>
                         <li class="home"><a href="javascript:void(0)" name="未到期询价项目.html" title="未到期询价项目"
-                                            class="iframeurl"><i class="icon-double-angle-right"></i>未到期询价项目</a></li>
-                        <li class="home"><a href="javascript:void(0)" name="已到期询价项目.html" title="已到期询价项目"
-                                            class="iframeurl"><i class="icon-double-angle-right"></i>已到期询价项目</a></li>
-                        <li class="home"><a href="javascript:void(0)" name="暂存项目.html" title="暂存项目" class="iframeurl"><i
+                                            class="iframeurl"><i class="icon-double-angle-right"></i>未到期询价项目</a></li>--%>
+                        <li class="home"><a href="javascript:void(0)" name="${contextParam}/tPlace/selecPlaceList"
+                                            title="场地列表"
+                                            class="iframeurl"><i class="icon-double-angle-right"></i>场地列表</a></li>
+                        <%--<li class="home"><a href="javascript:void(0)" name="暂存项目.html" title="暂存项目" class="iframeurl"><i
                                 class="icon-double-angle-right"></i>暂存项目</a></li>
                         <li class="home"><a href="javascript:void(0)" name="模板维护.html" title="模板维护" class="iframeurl"><i
                                 class="icon-double-angle-right"></i>模板维护</a></li>
                         <li class="home"><a href="javascript:void(0)" name="待响应询价.html" title="待响应询价" class="iframeurl"><i
                                 class="icon-double-angle-right"></i>（权限）待响应询价</a></li>
                         <li class="home"><a href="javascript:void(0)" name="已响应询价.html" title="已响应询价" class="iframeurl"><i
-                                class="icon-double-angle-right"></i>（权限）已响应询价</a></li>
+                                class="icon-double-angle-right"></i>（权限）已响应询价</a></li>--%>
                         <li class="home"><a href="javascript:void(0)" name="已到期询价.html" title="已到期询价" class="iframeurl"><i
                                 class="icon-double-angle-right"></i>（权限）已到期询价</a></li>
                     </ul>
@@ -229,186 +230,187 @@
         </div><!-- /#ace-settings-container -->
     </div>--%><!-- /.main-container-inner -->
 
-</div>
-<!--底部样式-->
+    </div>
+    <!--底部样式-->
 
-<div class="footer_style" id="footerstyle">
-    <p class="lf">版权所有：崇左市江州区佛子路 崇ICP备xxxxxxxx号</p>
-    <p class="rf">地址：崇左市江州区佛子路 邮编：537127 技术支持：马师傅</p>
-</div>
-<!--修改密码样式-->
-<div class="change_Pass_style" id="change_Pass">
-    <ul class="xg_style">
-        <li><label class="label_name">原&nbsp;&nbsp;密&nbsp;码</label><input name="原密码" type="password" class=""
-                                                                          id="password"></li>
-        <li><label class="label_name">新&nbsp;&nbsp;密&nbsp;码</label><input name="新密码" type="password" class=""
-                                                                          id="Nes_pas"></li>
-        <li><label class="label_name">确认密码</label><input name="再次确认密码" type="password" class="" id="c_mew_pas"></li>
+    <div class="footer_style" id="footerstyle">
+        <p class="lf">版权所有：崇左市江州区佛子路 崇ICP备xxxxxxxx号</p>
+        <p class="rf">地址：崇左市江州区佛子路 邮编：537127 技术支持：马师傅</p>
+    </div>
+    <!--修改密码样式-->
+    <div class="change_Pass_style" id="change_Pass">
+        <ul class="xg_style">
+            <li><label class="label_name">原&nbsp;&nbsp;密&nbsp;码</label><input name="原密码" type="password" class=""
+                                                                              id="password"></li>
+            <li><label class="label_name">新&nbsp;&nbsp;密&nbsp;码</label><input name="新密码" type="password" class=""
+                                                                              id="Nes_pas"></li>
+            <li><label class="label_name">确认密码</label><input name="再次确认密码" type="password" class="" id="c_mew_pas"></li>
 
-    </ul>
-    <!--       <div class="center"> <button class="btn btn-primary" type="button" id="submit">确认修改</button></div>-->
-</div>
-<!-- /.main-container -->
-<!-- basic scripts -->
-<script src="${contextParam}/static/js/jquery.js" type="text/javascript"></script>
-<!--[if !IE]> -->
-<script type="text/javascript">
-    window.jQuery || document.write("<script src='${contextParam}/static/assets/js/jquery-2.0.3.min.js'>" + "<" + "script>");
-</script>
-<!-- <![endif]-->
-<!--[if IE]>
-<script type="text/javascript">
-    window.jQuery || document.write("<script src='${contextParam}/static/assets/js/jquery-1.10.2.min.js'>" + "<" + "script>");
-</script>
-<![endif]-->
-<script type="text/javascript">
-    if ("ontouchend" in document) document.write("<script src='${contextParam}/static/assets/js/jquery.mobile.custom.min.js'>" + "<" + "script>");
-</script>
-<script src="${contextParam}/static/assets/js/bootstrap.min.js"></script>
-<script src="${contextParam}/static/assets/js/typeahead-bs2.min.js"></script>
-<!-- page specific plugin scripts -->
-<!--[if lte IE 8]>
-<script src="${contextParam}/static/assets/js/excanvas.min.js"></script>
-<![endif]-->
-<!-- ace scripts -->
-<script src="${contextParam}/static/assets/js/ace-elements.min.js"></script>
-<script src="${contextParam}/static/assets/js/ace.min.js"></script>
-<script src="${contextParam}/static/assets/layer/layer.js" type="text/javascript"></script>
-<!-- inline scripts related to this page -->
-<script type="text/javascript">
-    jQuery(document).ready(function () {
-        //初始化宽度、高度
-        $("#main-container").height($(window).height() - 76);
-        $("#iframe").height($(window).height() - 155);
-        $(".sidebar").height($(window).height() - 99);
-        var thisHeight = $("#nav_list").height($(window).height() - 185);
-        $(".submenu").height($(thisHeight).height() - 160);
-        $("#nav_list").children(".submenu").css("height", thisHeight);
-
-        //当文档窗口发生改变时 触发
-        $(window).resize(function () {
+        </ul>
+        <!--       <div class="center"> <button class="btn btn-primary" type="button" id="submit">确认修改</button></div>-->
+    </div>
+    <!-- /.main-container -->
+    <!-- basic scripts -->
+    <script src="${contextParam}/static/js/jquery.js" type="text/javascript"></script>
+    <!--[if !IE]> -->
+    <script type="text/javascript">
+        window.jQuery || document.write("<script src='${contextParam}/static/assets/js/jquery-2.0.3.min.js'>" + "<" + "script>");
+    </script>
+    <!-- <![endif]-->
+    <!--[if IE]>
+    <script type="text/javascript">
+        window.jQuery || document.write("<script src='${contextParam}/static/assets/js/jquery-1.10.2.min.js'>" + "<" + "script>");
+    </script>
+    <![endif]-->
+    <script type="text/javascript">
+        if ("ontouchend" in document) document.write("<script src='${contextParam}/static/assets/js/jquery.mobile.custom.min.js'>" + "<" + "script>");
+    </script>
+    <script src="${contextParam}/static/assets/js/bootstrap.min.js"></script>
+    <script src="${contextParam}/static/assets/js/typeahead-bs2.min.js"></script>
+    <!-- page specific plugin scripts -->
+    <!--[if lte IE 8]>
+    <script src="${contextParam}/static/assets/js/excanvas.min.js"></script>
+    <![endif]-->
+    <!-- ace scripts -->
+    <script src="${contextParam}/static/assets/js/ace-elements.min.js"></script>
+    <script src="${contextParam}/static/assets/js/ace.min.js"></script>
+    <script src="${contextParam}/static/assets/layer/layer.js" type="text/javascript"></script>
+    <!-- inline scripts related to this page -->
+    <script type="text/javascript">
+        jQuery(document).ready(function () {
+            //初始化宽度、高度
             $("#main-container").height($(window).height() - 76);
             $("#iframe").height($(window).height() - 155);
             $(".sidebar").height($(window).height() - 99);
             var thisHeight = $("#nav_list").height($(window).height() - 185);
+            console.log("thisHeight:" + $(thisHeight).height())
             $(".submenu").height($(thisHeight).height() - 160);
             $("#nav_list").children(".submenu").css("height", thisHeight);
-        });
-        $(".iframeurl").bind("click", function () {
-            var cid = $(this).attr("name");
-            var cname = $(this).attr("title");
-            $("#iframe").attr("src", cid).ready();
-            $("#Bcrumbs").attr("href", cid).ready();
-            $(".Current_page a").attr('href', cid).ready();
-            $(".Current_page").html(cname).ready();
-            $("#parentIframe").html("").css("display", "none").ready();
-        });
 
-    });
-    //jQuery( document).ready(function(){
-    //	  $("#submit").click(function(){
-    //	// var num=0;
-    //     var str="";
-    //     $("input[type$='password']").each(function(n){
-    //          if($(this).val()=="")
-    //          {
-    //              // num++;
-    //			   layer.alert(str+=""+$(this).attr("name")+"不能为空！\r\n",{
-    //                title: '提示框',
-    //				icon:0,
-    //          });
-    //             // layer.msg(str+=""+$(this).attr("name")+"不能为空！\r\n");
-    //             layer.close(index);
-    //          }
-    //     });
-    //})
-    //	});
-    /*********************点击事件*********************/
-    $(document).ready(function () {
-        $('#nav_list').find('li.home').click(function () {
-            $('#nav_list').find('li.home').removeClass('active');
-            $(this).addClass('active');
-        });
-
-    })
-
-    //时间设置
-    function currentTime() {
-        var d = new Date(), str = '';
-        str += d.getFullYear() + '年';
-        str += d.getMonth() + 1 + '月';
-        str += d.getDate() + '日';
-        str += d.getHours() + '时';
-        str += d.getMinutes() + '分';
-        str += d.getSeconds() + '秒';
-        return str;
-    }
-
-    setInterval(function () {
-        $('#time').html(currentTime)
-    }, 1000);
-    //修改密码
-    $('.change_Password').on('click', function () {
-        layer.open({
-            type: 1,
-            title: '修改密码',
-            area: ['300px', '300px'],
-            shadeClose: true,
-            content: $('#change_Pass'),
-            btn: ['确认修改'],
-            yes: function (index, layero) {
-                if ($("#password").val() == "") {
-                    layer.alert('原密码不能为空!', {
-                        title: '提示框',
-                        icon: 0,
-
-                    });
-                    return false;
-                }
-                if ($("#Nes_pas").val() == "") {
-                    layer.alert('新密码不能为空!', {
-                        title: '提示框',
-                        icon: 0,
-
-                    });
-                    return false;
-                }
-
-                if ($("#c_mew_pas").val() == "") {
-                    layer.alert('确认新密码不能为空!', {
-                        title: '提示框',
-                        icon: 0,
-
-                    });
-                    return false;
-                }
-                if (!$("#c_mew_pas").val || $("#c_mew_pas").val() != $("#Nes_pas").val()) {
-                    layer.alert('密码不一致!', {
-                        title: '提示框',
-                        icon: 0,
-
-                    });
-                    return false;
-                } else {
-                    layer.alert('修改成功！', {
-                        title: '提示框',
-                        icon: 1,
-                    });
-                    layer.close(index);
-                }
-            }
-        });
-    });
-    $('#Exit_system').on('click', function () {
-        layer.confirm('是否确定退出系统？', {
-                btn: ['是', '否'] //按钮
-            },
-            function () {
-                location.href = "登录.html";
-
+            //当文档窗口发生改变时 触发
+            $(window).resize(function () {
+                $("#main-container").height($(window).height() - 76);
+                $("#iframe").height($(window).height() - 155);
+                $(".sidebar").height($(window).height() - 99);
+                var thisHeight = $("#nav_list").height($(window).height() - 185);
+                $(".submenu").height($(thisHeight).height() - 160);
+                $("#nav_list").children(".submenu").css("height", thisHeight);
             });
-    });
-</script>
+            $(".iframeurl").bind("click", function () {
+                var cid = $(this).attr("name");
+                var cname = $(this).attr("title");
+                $("#iframe").attr("src", cid).ready();
+                $("#Bcrumbs").attr("href", cid).ready();
+                $(".Current_page a").attr('href', cid).ready();
+                $(".Current_page").html(cname).ready();
+                $("#parentIframe").html("").css("display", "none").ready();
+            });
+
+        });
+        //jQuery( document).ready(function(){
+        //	  $("#submit").click(function(){
+        //	// var num=0;
+        //     var str="";
+        //     $("input[type$='password']").each(function(n){
+        //          if($(this).val()=="")
+        //          {
+        //              // num++;
+        //			   layer.alert(str+=""+$(this).attr("name")+"不能为空！\r\n",{
+        //                title: '提示框',
+        //				icon:0,
+        //          });
+        //             // layer.msg(str+=""+$(this).attr("name")+"不能为空！\r\n");
+        //             layer.close(index);
+        //          }
+        //     });
+        //})
+        //	});
+        /*********************点击事件*********************/
+        $(document).ready(function () {
+            $('#nav_list').find('li.home').click(function () {
+                $('#nav_list').find('li.home').removeClass('active');
+                $(this).addClass('active');
+            });
+
+        })
+
+        //时间设置
+        function currentTime() {
+            var d = new Date(), str = '';
+            str += d.getFullYear() + '年';
+            str += d.getMonth() + 1 + '月';
+            str += d.getDate() + '日';
+            str += d.getHours() + '时';
+            str += d.getMinutes() + '分';
+            str += d.getSeconds() + '秒';
+            return str;
+        }
+
+        setInterval(function () {
+            $('#time').html(currentTime)
+        }, 1000);
+        //修改密码
+        $('.change_Password').on('click', function () {
+            layer.open({
+                type: 1,
+                title: '修改密码',
+                area: ['300px', '300px'],
+                shadeClose: true,
+                content: $('#change_Pass'),
+                btn: ['确认修改'],
+                yes: function (index, layero) {
+                    if ($("#password").val() == "") {
+                        layer.alert('原密码不能为空!', {
+                            title: '提示框',
+                            icon: 0,
+
+                        });
+                        return false;
+                    }
+                    if ($("#Nes_pas").val() == "") {
+                        layer.alert('新密码不能为空!', {
+                            title: '提示框',
+                            icon: 0,
+
+                        });
+                        return false;
+                    }
+
+                    if ($("#c_mew_pas").val() == "") {
+                        layer.alert('确认新密码不能为空!', {
+                            title: '提示框',
+                            icon: 0,
+
+                        });
+                        return false;
+                    }
+                    if (!$("#c_mew_pas").val || $("#c_mew_pas").val() != $("#Nes_pas").val()) {
+                        layer.alert('密码不一致!', {
+                            title: '提示框',
+                            icon: 0,
+
+                        });
+                        return false;
+                    } else {
+                        layer.alert('修改成功！', {
+                            title: '提示框',
+                            icon: 1,
+                        });
+                        layer.close(index);
+                    }
+                }
+            });
+        });
+        $('#Exit_system').on('click', function () {
+            layer.confirm('是否确定退出系统？', {
+                    btn: ['是', '否'] //按钮
+                },
+                function () {
+                    location.href = "登录.html";
+
+                });
+        });
+    </script>
 </body>
 </html>
 

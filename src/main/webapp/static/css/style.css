@@ -210,7 +210,7 @@
 /*********评分********/
 .table-responsive{ }
 .table-responsive .table{
-	 min-width:1500px; width:expression_r( document.body.clientWidth < 1500px ? "1499px" : "auto");overflow-x:scroll}
+	 min-width:1500px; width:expression_r( document.body.clientWidth<1500px ? "1499px" : "auto");overflow-x:scroll}
 	 body:nth-of-type(1) .table-responsive .table{ width:1672px;}
 .score_style{ margin-bottom:20px;}
 .score_style li{ padding:5px;}

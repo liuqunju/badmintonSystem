@@ -29,6 +29,16 @@
         from badmintonsystem.t_place
         limit #{offset}, #{limit}
     </select>
+    <select id="selectTplaceCount" resultType="integer">
+        SELECT COUNT(*) FROM t_place;
+    </select>
+
+    <!--查询指定行数据-->
+    <select id="findAll" resultMap="TPlaceMap">
+        select
+          ID, PLACE_NAME, PRICE, PRINCIPAL, CONSULTING_TELEPHONE, GALLERYFUL, CONTENT, ADD_TIME, PLACE_STATUS
+        from badmintonsystem.t_place
+    </select>
 
     <!--通过实体作为筛选条件查询-->
     <select id="queryAll" resultMap="TPlaceMap">
@@ -68,8 +78,8 @@
 
     <!--新增所有列-->
     <insert id="insert" keyProperty="id" useGeneratedKeys="true">
-        insert into badmintonsystem.t_place(PLACE_NAME, PRICE, PRINCIPAL, CONSULTING_TELEPHONE, GALLERYFUL, CONTENT, ADD_TIME, PLACE_STATUS)
-        values (#{placeName}, #{price}, #{principal}, #{consultingTelephone}, #{galleryful}, #{content}, #{addTime}, #{placeStatus})
+        insert into badmintonsystem.t_place(ID,PLACE_NAME, PRICE, PRINCIPAL, CONSULTING_TELEPHONE, GALLERYFUL, CONTENT, ADD_TIME, PLACE_STATUS)
+        values (#{id},#{placeName}, #{price}, #{principal}, #{consultingTelephone}, #{galleryful}, #{content}, #{addTime}, #{placeStatus})
     </insert>
 
     <!--通过主键修改数据-->

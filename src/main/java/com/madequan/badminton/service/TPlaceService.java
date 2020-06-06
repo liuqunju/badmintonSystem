@@ -1,5 +1,6 @@
 package com.madequan.badminton.service;
 
+import com.madequan.badminton.entity.Pager;
 import com.madequan.badminton.entity.TPlace;
 import java.util.List;
 
@@ -26,7 +27,13 @@ public interface TPlaceService {
      * @param limit 查询条数
      * @return 对象列表
      */
-    List<TPlace> queryAllByLimit(int offset, int limit);
+    Pager queryAllByLimit(int offset, int limit, TPlace tPlace);
+    /**
+     * 查询多条数据
+     *
+     * @return 对象列表
+     */
+    List<TPlace> findAll();
 
     /**
      * 新增数据

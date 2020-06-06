@@ -29,6 +29,18 @@ public interface TPlaceDao {
      */
     List<TPlace> queryAllByLimit(@Param("offset") int offset, @Param("limit") int limit);
 
+    /**
+     * 查询总记录数
+     * @return
+     */
+    int selectTplaceCount ();
+    /**
+     * 去全部数据
+     *
+     * @return 对象列表
+     */
+    List<TPlace> findAll();
+
 
     /**
      * 通过实体作为筛选条件查询
