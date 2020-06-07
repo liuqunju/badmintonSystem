@@ -19,6 +19,8 @@
     <!-- 静态资源默认servlet配置 -->
     <mvc:default-servlet-handler/>
 
+    <mvc:resources mapping="/My97DatePicker/**" location="/static/My97DatePicker/"/>
+
     <!-- 配置返回视图的路径，以及识别后缀是jsp文件 -->
     <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
         <property name="viewClass" value="org.springframework.web.servlet.view.JstlView"/>
