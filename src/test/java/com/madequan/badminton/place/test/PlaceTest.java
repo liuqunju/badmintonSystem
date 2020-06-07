@@ -17,7 +17,6 @@ import java.util.UUID;
 
 /**
  * @Description:
- * @Author: yingjie.liu
  * @Date: 2020/06/05/22:17
  */
 @WebAppConfiguration

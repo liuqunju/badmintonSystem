@@ -2,7 +2,6 @@ package com.madequan.badminton.placeenum;
 
 /**
  * @Description:
- * @Author: yingjie.liu
  * @Date: 2020/06/06/15:37
  */
 public enum PageEnum {

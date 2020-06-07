@@ -5,7 +5,6 @@ import java.util.Map;
 
 /**
  * @Description:
- * @Author: yingjie.liu
  * @Date: 2020/06/05/22:24
  */
 public class RandomValue {
